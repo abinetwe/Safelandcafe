@@ -610,7 +610,7 @@ NAVBAR
     max-width: 1400px;
     margin: auto;
     padding: 0 7%;     /* Remove vertical padding */
-    height: 80px;      /* Set a fixed height */
+    height: 100px;      /* Set a fixed height */
     display: flex;
     justify-content: space-between;
     align-items: center;
