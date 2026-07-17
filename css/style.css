@@ -606,14 +606,13 @@ box-shadow:0 5px 20px rgba(0,0,0,.5);
 NAVBAR
 ==============================*/
 
-.navbar {
-    max-width: 1400px;
-    margin: auto;
-    padding: 14px 7%;     /* Remove vertical padding */
-    height: 100px;      /* Set a fixed height */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.navbar{
+  max-width:1400px;
+  margin:auto;
+  padding: 16px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
 }
 .logo em{
 
