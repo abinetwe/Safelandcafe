@@ -609,7 +609,8 @@ NAVBAR
 .navbar{
   max-width:1400px;
   margin:auto;
-  padding: 16px 7%;
+  padding: 0 7%;
+  height: 60Px;
   display: flex;
   justify-content: space-between;
   align-items:center;
