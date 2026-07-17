@@ -1,0 +1,217 @@
+/*==================================================
+SUNNY BURGER & JUICE BAR
+ANIMATION.CSS
+Keyframes • Micro-interactions • Reveal effects
+===================================================*/
+
+/*==============================
+SPIN
+==============================*/
+
+@keyframes spin{
+
+from{ transform:rotate(0deg); }
+
+to{ transform:rotate(360deg); }
+
+}
+
+/*==============================
+FLOAT
+==============================*/
+
+@keyframes float{
+
+0%{ transform:translateY(0) rotate(0deg); }
+
+50%{ transform:translateY(-22px) rotate(1.5deg); }
+
+100%{ transform:translateY(0) rotate(0deg); }
+
+}
+
+/*==============================
+FLOAT SLOW (secondary layer for slider)
+==============================*/
+
+@keyframes floatSlow{
+
+0%,100%{ transform:translateY(0) scale(1); }
+
+50%{ transform:translateY(-16px) scale(1.02); }
+
+}
+
+.hero-slide.active img{
+
+animation:floatSlow 5s ease-in-out infinite;
+
+}
+
+/*==============================
+SCROLL WHEEL
+==============================*/
+
+@keyframes scrollWheel{
+
+0%{ transform:translateY(0); opacity:1; }
+
+70%{ opacity:0; }
+
+100%{ transform:translateY(20px); opacity:0; }
+
+}
+
+/*==============================
+CURSOR HOVER STATE
+==============================*/
+
+.cursor2.hover{
+
+width:60px;
+
+height:60px;
+
+background:rgba(255,201,60,.12);
+
+border-color:#FFC93C;
+
+}
+
+/*==============================
+FADE / REVEAL ON SCROLL
+==============================*/
+
+.reveal{
+
+opacity:0;
+
+transform:translateY(40px);
+
+transition:opacity .8s ease, transform .8s ease;
+
+}
+
+.reveal.visible{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+/*==============================
+COUNTER PULSE
+==============================*/
+
+@keyframes counterPop{
+
+0%{ transform:scale(.8); opacity:0; }
+
+100%{ transform:scale(1); opacity:1; }
+
+}
+
+.counter{
+
+animation:counterPop .5s ease;
+
+}
+
+/*==============================
+RIPPLE EFFECT (buttons)
+==============================*/
+
+.ripple{
+
+position:absolute;
+
+border-radius:50%;
+
+background:rgba(255,255,255,.5);
+
+transform:scale(0);
+
+animation:rippleAnim .6s linear;
+
+pointer-events:none;
+
+}
+
+@keyframes rippleAnim{
+
+to{
+
+transform:scale(4);
+
+opacity:0;
+
+}
+
+}
+
+/*==============================
+SLIDER SLIDE-IN / OUT DIRECTION HELPERS
+==============================*/
+
+.hero-slide.slide-in-right{
+
+animation:slideInRight .6s ease forwards;
+
+}
+
+.hero-slide.slide-in-left{
+
+animation:slideInLeft .6s ease forwards;
+
+}
+
+@keyframes slideInRight{
+
+from{ opacity:0; transform:translateX(60px) scale(.92); }
+
+to{ opacity:1; transform:translateX(0) scale(1); }
+
+}
+
+@keyframes slideInLeft{
+
+from{ opacity:0; transform:translateX(-60px) scale(.92); }
+
+to{ opacity:1; transform:translateX(0) scale(1); }
+
+}
+
+/*==============================
+LOGO GLOW PULSE (navbar)
+==============================*/
+
+@keyframes logoGlow{
+
+0%,100%{ box-shadow:0 0 0 2px rgba(255,201,60,.4); }
+
+50%{ box-shadow:0 0 0 4px rgba(255,201,60,.65); }
+
+}
+
+.logo img{
+
+animation:logoGlow 3s ease-in-out infinite;
+
+}
+
+/*==============================
+BADGE FLOAT (category icons)
+==============================*/
+
+.category-card{
+
+animation:none;
+
+}
+
+.category-card:hover{
+
+animation:none;
+
+}

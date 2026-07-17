@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Safe Land & Juice Bar | Digital Menu</title>
+<meta name="description" content="Sunny Burger & Juice Bar - Burgers, Pizza, Breakfast, Snacks, Fasting Menu and more.">
+<link rel="icon" href="images/logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animation.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<!--=================-->
+<!-- LOADER -->
+<!--=================-->
+<div id="loader">
+<div class="loader-logo-wrap">
+<img src="images/logo.png" alt="Sunny Burger & Juice Bar" class="loader-logo">
+<div class="loader-ring"></div>
+</div>
+<h2>Safe Land <span>Burger & Juice Bar</span></h2>
+<div class="loader-bar"><span></span></div>
+</div>
+
+<!--=================-->
+<!-- CURSOR -->
+<!--=================-->
+<div class="cursor"></div>
+<div class="cursor2"></div>
+
+<!--=================-->
+<!-- NAVIGATION -->
+<!--=================-->
+<header id="header">
+<nav class="navbar">
+<div class="logo">
+<img src="images/logo.png" alt="Sunny Burger & Juice Bar" class="logo-hero">
+<span>Safe Land<em>Burger & Juice Bar</em></span>
+</div>
+<ul class="nav-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#categories">Menu</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+<div class="nav-buttons">
+<a href="https://t.me/" target="_blank" class="btn btn-primary btn-telegram">
+<i class="fa-brands fa-telegram"></i> Order Now
+</a>
+<div id="hamburger">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+</nav>
+</header>
+
+<!--=================-->
+<!-- MOBILE NAV OVERLAY -->
+<!--=================-->
+<div class="nav-overlay" id="navOverlay"></div>
+
+<!--=================-->
+<!-- HERO -->
+<!--=================-->
+<section class="hero" id="home">
+<div class="shape one"></div>
+<div class="shape two"></div>
+<div class="shape three"></div>
+<div class="hero-content">
+<p class="hero-top"><i class="fa-solid fa-sun"></i> Premium Burgers & Fresh Juice</p>
+<h1>Taste The <span>Safe Land Side</span></h1>
+<p>Fresh ingredients, juicy burgers, crispy pizza and refreshing juice crafted daily at Sunny Burger & Juice Bar.</p>
+</div>
+<div class="hero-image">
+<div class="hero-slider" id="heroSlider">
+<div class="hero-slide active">
+<img src="images/hero-burger.png" alt="Sunny Burger" class="floating" onerror="this.src='images/logo.png'">
+</div>
+<div class="hero-slide">
+<img src="images/hero-pizza.png" alt="Sunny Pizza" class="floating" onerror="this.src='images/logo.png'">
+</div>
+<div class="hero-slide">
+<img src="images/hero-juice.png" alt="Sunny Juice" class="floating" onerror="this.src='images/logo.png'">
+</div>
+<button class="slider-btn prev" id="sliderPrev" aria-label="Previous">
+<i class="fa-solid fa-chevron-left"></i>
+</button>
+<button class="slider-btn next" id="sliderNext" aria-label="Next">
+<i class="fa-solid fa-chevron-right"></i>
+</button>
+</div>
+<div class="slider-dots" id="sliderDots"></div>
+</div>
+<div class="scroll-indicator"><span></span></div>
+</section>
+
+<!--=================-->
+<!-- MENU CATEGORIES -->
+<!--=================-->
+<section class="categories section" id="categories">
+<div class="section-title">
+<h2>Menu Categories</h2>
+<p>Explore Our Full Sunny Menu</p>
+</div>
+<div class="category-grid">
+<div class="category-card" data-category="breakfast">
+<img src="images/break-fast.jpg" alt="Sunny Break Fast">
+<h3>Break Fast</h3>
+</div>
+<div class="category-card" data-category="burger">
+<img src="images/burger.jpg" alt="Sunny Burger">
+<h3>Burgers</h3>
+</div>
+<div class="category-card" data-category="pizza">
+<img src="images/pizza.jpg" alt="Sunny Pizza">
+<h3>Pizza</h3>
+</div>
+<div class="category-card" data-category="fries">
+<img src="images/fries.jpg" alt="Sunny Fries">
+<h3>Fries</h3>
+</div>
+<div class="category-card" data-category="wrap">
+<img src="images/wrap.jpg" alt="Sunny Wrap">
+<h3>Wrap</h3>
+</div>
+<div class="category-card" data-category="sandwich">
+<img src="images/sandwich.jpg" alt="Sunny Sandwich">
+<h3>Sandwich</h3>
+</div>
+<div class="category-card" data-category="drinks">
+<img src="images/drinks.jpg" alt="Sunny Drinks">
+<h3>Drinks</h3>
+</div>
+<div class="category-card" data-category="cake">
+<img src="images/cake.jpg" alt="Sunny Cake">
+<h3>Cake</h3>
+</div>
+<div class="category-card" data-category="dessert">
+<img src="images/desert.jpg" alt="Sunny Desert">
+<h3>Dessert</h3>
+</div>
+<div class="category-card" data-category="ice-cream">
+<img src="images/ice-cream.jpg" alt="Sunny Ice Cream">
+<h3>Ice Cream</h3>
+</div>
+<div class="category-card" data-category="snacks">
+<img src="images/snacks.jpg" alt="Sunny Snacks">
+<h3>Snacks</h3>
+</div>
+<div class="category-card" data-category="fasting">
+<img src="images/fasting.jpg" alt="Sunny Fasting">
+<h3>Fasting</h3>
+</div>
+</div>
+</section>
+
+<!--=================-->
+<!-- DIGITAL MENU -->
+<!--=================-->
+<section class="menu section" id="menu">
+<div class="section-title">
+<h2>Safe Land Menu</h2>
+<p>Choose Your Favorite Meal</p>
+</div>
+<div class="menu-tools">
+<input type="text" id="search" placeholder="Search Food...">
+<select id="filterCategory">
+<option value="all">All Categories</option>
+<option value="breakfast">Break Fast</option>
+<option value="burger">Burger</option>
+<option value="pizza">Pizza</option>
+<option value="snacks">Snacks</option>
+<option value="fasting">Fasting</option>
+</select>
+</div>
+<div class="menu-grid" id="menuContainer">
+<!-- Generated by JS -->
+</div>
+</section>
+
+<!--=================-->
+<!-- WHY US -->
+<!--=================-->
+<section class="features section">
+<div class="section-title">
+<h2>Why Choose Safe Land</h2>
+</div>
+<div class="feature-grid">
+<div class="feature">🚀<h3>Fast Service</h3></div>
+<div class="feature">🍔<h3>Fresh Ingredients</h3></div>
+<div class="feature">👨‍🍳<h3>Expert Chefs</h3></div>
+<div class="feature">⭐<h3>Premium Quality</h3></div>
+<div class="feature">📱<h3>Telegram Ordering</h3></div>
+<div class="feature">📞<h3>Friendly Support</h3></div>
+</div>
+</section>
+
+<!--=================-->
+<!-- ABOUT -->
+<!--=================-->
+<section class="about section" id="about">
+<div class="about-content">
+<div class="about-image">
+<img src="images/about.jpg" alt="Sunny Burger & Juice Bar">
+</div>
+<div class="about-text">
+<h2>About Safe Land Burger & Juice Bar</h2>
+<p>Serving delicious burgers, pizza, breakfast and fresh juice with quality ingredients and a smile your favorite neighborhood spot for great food.</p>
+<div class="stats">
+<div>
+<h3 class="counter" data-count="5">0</h3>
+<span>Years</span>
+</div>
+<div>
+<h3 class="counter" data-count="10000">0</h3>
+<span>Customers</span>
+</div>
+<div>
+<h3 class="counter" data-count="40">0</h3>
+<span>Menu Items</span>
+</div>
+<div>
+<h3 class="counter" data-count="4.8">0</h3>
+<span>Rating</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!--=================-->
+<!-- TESTIMONIALS -->
+<!--=================-->
+<section class="testimonials section">
+<div class="section-title">
+<h2>Customer Reviews</h2>
+</div>
+<div class="testimonial-slider" id="testimonialSlider">
+<!-- JS -->
+</div>
+</section>
+
+<!--=================-->
+<!-- CONTACT -->
+<!--=================-->
+<section class="contact section" id="contact">
+<div class="contact-container">
+<div class="contact-info">
+<h3>Contact Us</h3>
+<p><i class="fa-solid fa-location-dot"></i> Hawassa, Ethiopia</p>
+<p><i class="fa-solid fa-phone"></i> +251989595942</p>
+<p><i class="fa-solid fa-phone"></i> +251916828285</p>
+<p><i class="fa-brands fa-telegram"></i> t.me/sunnyburger</p>
+<p><i class="fa-solid fa-clock"></i> 7AM - 8PM</p>
+<iframe src="https://maps.google.com/maps?q=hawassa&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+</div>
+<div class="contact-action-buttons">
+<a href="tel:+251968720472" class="btn btn-outline contact-action-btn">
+<i class="fa-solid fa-phone"></i> Call Now
+</a>
+<a href="https://maps.app.goo.gl/dsxY7qL3HLmbapm59" target="_blank" class="btn btn-outline contact-action-btn">
+<i class="fa-solid fa-location-arrow"></i> Directions
+</a>
+</div>
+</div>
+</section>
+
+<!--=================-->
+<!-- FOOTER -->
+<!--=================-->
+<footer>
+<div class="footer-grid">
+<div>
+<div class="footer-logo">
+<img src="images/logo.png" alt="Sunny Burger & Juice Bar">
+<h2>Safe Land</h2>
+</div>
+<p>Burger & Juice Bar</p>
+</div>
+<div>
+<h3>Quick Links</h3>
+<a href="#home">Home</a>
+<a href="#menu">Menu</a>
+<a href="#about">About</a>
+</div>
+<div>
+<h3>Info</h3>
+<p class="footer-note">NB: All prices are VAT inclusive</p>
+<p style="color:var(--muted); font-size:.9rem; margin-top:8px;">Hawassa, Ethiopia</p>
+</div>
+<div class="socials">
+<a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+<a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+<a href="https://t.me/" target="_blank" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+<a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+</div>
+</div>
+<div class="copyright">
+<div>© 2026 Safe Land Burger & Juice Bar. All Rights Reserved.</div> &ensp; &ensp;
+<div>&#129142; Designed By Efoy Digital Soltions. All Rights Reserved.</div>
+</div>
+</footer>
+
+<a href="https://t.me/" target="_blank" class="telegram-float" aria-label="Order on Telegram">
+<i class="fa-brands fa-telegram"></i>
+</a>
+
+<script src="js/menu.js"></script>
+<script src="js/script.js"></script>
+<script src="js/animation.js"></script>
+
+</body>
+</html>
